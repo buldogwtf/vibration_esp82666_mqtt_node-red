@@ -1,0 +1,72 @@
+[
+    {
+        "id": "602683e3.108dec",
+        "type": "mqtt in",
+        "z": "851f30e7.a2bc8",
+        "name": "Temp ESP",
+        "topic": "office/motion/status",
+        "qos": "2",
+        "broker": "12088b5.2fcdd75",
+        "x": 273,
+        "y": 220,
+        "wires": [
+            [
+                "a2b84f47.485e9"
+            ]
+        ]
+    },
+    {
+        "id": "a2b84f47.485e9",
+        "type": "ui_text",
+        "z": "851f30e7.a2bc8",
+        "group": "90c2bba6.1e2dd8",
+        "order": 12,
+        "width": "4",
+        "height": "1",
+        "name": "Motion",
+        "label": "Wasmachine",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 506,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "12088b5.2fcdd75",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "90c2bba6.1e2dd8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Systeem",
+        "tab": "902ffad6.38cf58",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "902ffad6.38cf58",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Domotica",
+        "icon": "dashboard",
+        "order": 1
+    }
+]
